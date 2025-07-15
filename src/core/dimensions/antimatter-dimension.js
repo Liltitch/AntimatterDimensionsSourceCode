@@ -7,6 +7,7 @@ import { DimensionState } from "./dimension";
 export function antimatterDimensionCommonMultiplier() {
   let multiplier = DC.D1;
 
+  let Meyes = 100
   multiplier = multiplier.times(Achievements.power);
   multiplier = multiplier.times(ShopPurchase.dimPurchases.currentMult);
   multiplier = multiplier.times(ShopPurchase.allDimPurchases.currentMult);
@@ -40,7 +41,8 @@ export function antimatterDimensionCommonMultiplier() {
     InfinityChallenge(8),
     EternityChallenge(10),
     AlchemyResource.dimensionality,
-    PelleUpgrade.antimatterDimensionMult
+    PelleUpgrade.antimatterDimensionMult,
+    Meyes
   );
 
   multiplier = multiplier.dividedByEffectOf(InfinityChallenge(6));

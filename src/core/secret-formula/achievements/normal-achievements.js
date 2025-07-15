@@ -173,9 +173,9 @@ export const normalAchievements = [
     id: 36,
     name: "Claustrophobic",
     get description() {
-      return `Infinity with just ${formatInt(1)} Antimatter Galaxy. (Your Antimatter Galaxies are reset on Infinity.)`;
+      return `Infinity with ${formatInt(0)} Antimatter Galaxy. (Your Antimatter Galaxies are reset on Infinity.)`;
     },
-    checkRequirement: () => player.galaxies === 1,
+    checkRequirement: () => player.galaxies === 0,
     checkEvent: GAME_EVENT.BIG_CRUNCH_BEFORE,
     get reward() { return `Multiply starting tick speed by ${format(1.02, 2, 2)}.`; },
     effect: 1 / 1.02
